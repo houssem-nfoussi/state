@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.card {
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+  border: 2px solid black;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card img{
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productslist{
+  width: 70%;
+  margin: 20px auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.484);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .modal-box{
+    
+    padding: 20px auto;
+    width: 35%;
+    background-color: white;
+    
+    
   }
-}
+  .modal-box img{
+    width: 80%;
+    
+  }
+  button{
+    background-color: transparent;
+    font-size: 23px;
+    padding: 10px 20px;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: cadetblue;
+  }
+  .list{
+    display: flex;
+    gap: 20px;
+  }
